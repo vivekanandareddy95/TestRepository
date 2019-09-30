@@ -40,6 +40,28 @@
         </cloudHubDeployment>
     </configuration>
 			</plugin>
+			<plugin>
+         <groupId>com.google.code.maven-replacer-plugin</groupId>
+         <artifactId>replacer</artifactId>
+         <version>1.5.3</version>
+         <executions>
+            <execution>
+               <phase>prepare-package</phase>
+               <goals>
+                  <goal>replace</goal>
+               </goals>
+            </execution>
+         </executions>
+         <configuration>
+            <file>src/main/mule/helloworld.xml</file>
+            <replacements>
+               <replacement>
+                  <token>env</token>
+                  <value>env</value>
+               </replacement>
+            </replacements>
+         </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
