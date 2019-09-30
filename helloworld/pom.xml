@@ -31,7 +31,7 @@
             <muleVersion>4.1.4</muleVersion>
             <username>vivekanandareddyG</username>
             <password>Vivek@8099</password>
-            <applicationName>rxr-substraction</applicationName>
+            <applicationName>deploy</applicationName>
             <environment>Sandbox</environment>
                         <businessGroup>Work Stream - API-led Application Networks</businessGroup>
             <properties>
